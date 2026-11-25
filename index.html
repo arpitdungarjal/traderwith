@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trade With Sudarshan - Official Telegram Channel</title>
+  
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1081428788282661');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1081428788282661&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #090d16 0%, #131d35 100%);
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* Card Container */
+    .tws-card {
+      background: rgba(17, 27, 51, 0.95);
+      backdrop-filter: blur(10px);
+      width: 100%;
+      max-width: 440px;
+      border-radius: 30px;
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.8);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tws-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 180px;
+      height: 4px;
+      background: linear-gradient(90deg, #38bdf8, #f59e0b);
+      border-radius: 0 0 10px 10px;
+    }
+
+    /* Top Badge */
+    .tws-top-badge {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      color: #38bdf8;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      padding: 6px 16px;
+      border-radius: 50px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    /* Logo / Profile Image */
+    .tws-profile-wrap {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 16px auto;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid #f59e0b;
+      box-shadow: 0 0 30px rgba(245, 158, 11, 0.3);
+      background: #090d16;
+    }
+
+    .tws-profile-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Heading & Subtitle */
+    h1 {
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+      background: linear-gradient(135deg, #ffffff 30%, #38bdf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+    }
+
+    .tws-sub {
+      font-size: 13.5px;
+      color: #94a3b8;
+      margin-bottom: 18px;
+      font-weight: 600;
+    }
+
+    /* SEBI Registered Badge */
+    .tws-sebi-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      color: #34d399;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      padding: 6px 14px;
+      border-radius: 50px;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+
+    /* Telegram CTA Button */
+    .tws-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      background: linear-gradient(135deg, #0088cc 0%, #00aaff 100%);
+      color: #ffffff !important;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 800;
+      padding: 16px 0;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 136, 204, 0.45);
+      margin-bottom: 10px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .tws-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 35px rgba(0, 136, 204, 0.6);
+    }
+
+    .tws-btn svg {
+      width: 22px;
+      height: 22px;
+      fill: #ffffff;
+    }
+
+    .tws-access-info {
+      font-size: 12px;
+      color: #34d399;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    /* Bento Grid Features */
+    .tws-bento-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .tws-bento-box {
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 14px;
+      padding: 14px 12px;
+      text-align: left;
+    }
+
+    .tws-bento-icon {
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    .tws-bento-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #f1f5f9;
+      line-height: 1.3;
+    }
+
+    /* Full Width Feature Row */
+    .tws-feature-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 14px;
+      padding: 14px 16px;
+      text-align: left;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #f1f5f9;
+      margin-bottom: 22px;
+    }
+
+    .tws-row-icon {
+      color: #f59e0b;
+      font-size: 16px;
+    }
+
+    /* Disclaimer Section */
+    .tws-disclaimer {
+      background: rgba(9, 13, 22, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      border-radius: 12px;
+      padding: 12px 14px;
+      text-align: left;
+      margin-bottom: 18px;
+    }
+
+    .tws-disclaimer-title {
+      font-size: 11px;
+      font-weight: 800;
+      color: #f59e0b;
+      margin-bottom: 3px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .tws-disclaimer-text {
+      font-size: 10.5px;
+      color: #64748b;
+      line-height: 1.4;
+      font-weight: 500;
+    }
+
+    /* Footer Agency Link */
+    .tws-footer {
+      font-size: 12px;
+      color: #facc15;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+      transition: opacity 0.2s;
+    }
+
+    .tws-footer:hover {
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="tws-card">
+    
+    <!-- Top Badge -->
+    <div class="tws-top-badge">⭐ OFFICIAL TRADING COMMUNITY</div>
+
+    <!-- Profile / Logo Space -->
+    <div class="tws-profile-wrap">
+      <!-- PASTE DIRECT IMAGE LINK BELOW -->
+      <img src="https://kommodo.ai/i/S0rVdYZN21OAbDIoCLlB" alt="Trade With Sudarshan">
+    </div>
+
+    <h1>TRADE WITH SUDARSHAN</h1>
+    <p class="tws-sub">Intraday, Options & Price Action Market Analysis</p>
+
+    <!-- SEBI Registered Badge -->
+    <div class="tws-sebi-badge">
+      🔒 SEBI Registered Research Analyst
+    </div>
+
+    <!-- Telegram Button -->
+    <a href="https://t.me/+EmjPS_ZliJwzMWQ1" class="tws-btn" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.02-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.25.38-.51 1.06-.78 4.16-1.81 6.94-3.01 8.34-3.6 3.97-1.66 4.79-1.95 5.33-1.96.12 0 .38.03.55.17.14.12.18.28.2.45 0 .07.01.23 0 .35z"/></svg>
+      JOIN FREE TELEGRAM CHANNEL
+    </a>
+
+    <div class="tws-access-info">
+      ✔ Instant Access • 100% Free Forever
+    </div>
+
+    <!-- Bento Grid Features -->
+    <div class="tws-bento-grid">
+      <div class="tws-bento-box">
+        <div class="tws-bento-icon">📊</div>
+        <div class="tws-bento-title">Nifty & BankNifty Levels</div>
+      </div>
+      <div class="tws-bento-box">
+        <div class="tws-bento-icon">🛡️</div>
+        <div class="tws-bento-title">Strict Risk Management</div>
+      </div>
+    </div>
+
+    <div class="tws-feature-row">
+      <span class="tws-row-icon">📈</span>
+      <span>Live Market Updates & Pure Price Action Logic</span>
+    </div>
+
+    <!-- Disclaimer Box -->
+    <div class="tws-disclaimer">
+      <div class="tws-disclaimer-title">Educational Disclaimer</div>
+      <div class="tws-disclaimer-text">
+        All content is strictly for educational and informational purposes. Stock market investments are subject to market risks.
+      </div>
+    </div>
+
+    <!-- Footer Agency Link -->
+    <a href="https://t.me/+EmjPS_ZliJwzMWQ1" class="tws-footer" target="_blank" rel="noopener noreferrer">
+      Ads by Juggad Agency
+    </a>
+
+  </div>
+
+</body>
+</html>
